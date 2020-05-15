@@ -1,5 +1,5 @@
 // eslint-disable-file
-import React from "react";
+import React, { useState } from "react";
 
 export default ({ onSubmit, errors, routeTo }) => {
   const [email, setEmail] = useState("");
