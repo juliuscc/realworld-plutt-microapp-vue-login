@@ -22,7 +22,9 @@ export default ({ onSubmit, routeTo }) => {
           <div class="col-md-6 offset-md-3 col-xs-12">
             <h1 class="text-xs-center">Sign in</h1>
             <p class="text-xs-center">
-              <a onClick={internalRoute("register")}>Need an account?</a>
+              <a href="#" onClick={internalRoute("register")}>
+                Need an account?
+              </a>
             </p>
             <form onSubmit={handleSubmit}>
               <fieldset class="form-group">
