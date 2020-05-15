@@ -5,19 +5,22 @@ export default ({ onSubmit, errors, routeTo }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const errorMessages = !errors ? (
-    undefined
-  ) : (
-    <ul className="error-messages">
-      {errors.map((error, index) => (
-        <li key={index}>
-          {index}
-          {"  "}
-          {error}
-        </li>
-      ))}
-    </ul>
-  );
+  const errorMessages = undefined;
+  console.log({ errors });
+
+  // const errorMessages = !errors ? (
+  //   undefined
+  // ) : (
+  //   <ul className="error-messages">
+  //     {errors.map((error, index) => (
+  //       <li key={index}>
+  //         {index}
+  //         {"  "}
+  //         {error}
+  //       </li>
+  //     ))}
+  //   </ul>
+  // );
 
   const handleSubmit = (e) => {
     e.preventDefault();
