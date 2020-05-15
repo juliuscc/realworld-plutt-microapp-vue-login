@@ -1,26 +1,9 @@
 // eslint-disable-file
 import React, { useState } from "react";
 
-export default ({ onSubmit, errors, routeTo }) => {
+export default ({ onSubmit, routeTo }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const errorMessages = undefined;
-  console.log({ errors });
-
-  // const errorMessages = !errors ? (
-  //   undefined
-  // ) : (
-  //   <ul className="error-messages">
-  //     {errors.map((error, index) => (
-  //       <li key={index}>
-  //         {index}
-  //         {"  "}
-  //         {error}
-  //       </li>
-  //     ))}
-  //   </ul>
-  // );
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +24,6 @@ export default ({ onSubmit, errors, routeTo }) => {
             <p class="text-xs-center">
               <a onClick={internalRoute("register")}>Need an account?</a>
             </p>
-            {errorMessages}
             <form onSubmit={handleSubmit}>
               <fieldset class="form-group">
                 <input
