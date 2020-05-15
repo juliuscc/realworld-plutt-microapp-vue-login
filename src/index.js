@@ -48,7 +48,7 @@ export default ({ onSubmit, errors, routeTo }) => {
                   class="form-control form-control-lg"
                   type="text"
                   value={email}
-                  onSubmit={(e) => setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
                 />
               </fieldset>
@@ -57,7 +57,7 @@ export default ({ onSubmit, errors, routeTo }) => {
                   class="form-control form-control-lg"
                   type="password"
                   value={password}
-                  onSubmit={(e) => setPassword(e.target.value)}
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
                 />
               </fieldset>
