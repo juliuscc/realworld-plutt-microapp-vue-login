@@ -4,7 +4,7 @@
   "main": "build/proxy/vue.js",
   "scripts": {
     "build": "plutt build",
-    "start": "plutt serve build/plutt-tags -p $PORT"
+    "start": "plutt serve build/plutt-vue-login -p $PORT"
   },
   "dependencies": {
     "@digitalroute/plutt": "^2.0.0",
