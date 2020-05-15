@@ -1,0 +1,18 @@
+{
+  "name": "plutt-vue-login",
+  "version": "1.0.0",
+  "main": "build/proxy/vue.js",
+  "scripts": {
+    "build": "plutt build",
+    "start": "plutt serve build/plutt-tags -p $PORT",
+    "postinstall": "plutt build"
+  },
+  "dependencies": {
+    "@digitalroute/plutt": "^2.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "plutt": {
+    "hostPath": "https://realworld-plutt-vue-login.herokuapp.com"
+  }
+}
